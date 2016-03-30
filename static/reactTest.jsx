@@ -10,7 +10,7 @@
             var that = this;
             $.getJSON('/testdata', function(data){
                 console.log(data.number);
-                var final = currentNumber + 1;
+                var final = currentNumber + data.number;
                 that.setState({outputLabel: final})  
             })
             

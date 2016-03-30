@@ -3,7 +3,7 @@ from flask import Flask, render_template, json, jsonify
 
 app = Flask(__name__)
 
-my_numbers = {"number": 1}
+my_numbers = {"number": 5}
 
 @app.route('/')
 def main():
