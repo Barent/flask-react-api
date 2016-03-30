@@ -4,8 +4,16 @@
         },
         displayLabel(){
             var currentNumber = parseFloat(this.state.value);
-            var final = currentNumber + 5;
-            this.setState({outputLabel: final})
+            var objectPass = {};
+            objectPass.number = currentNumber;
+
+            var that = this;
+            $.getJSON('/testdata', function(data){
+                console.log(data.number);
+                var final = currentNumber + 1;
+                that.setState({outputLabel: final})  
+            })
+            
         },
         getInitialState(){
             return {
