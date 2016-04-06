@@ -12,6 +12,10 @@ def main():
 @app.route('/testdata')
 def numbersapi():
     return jsonify(my_numbers)
+    
+@app.route('/simon')
+def renderSimon():
+    return render_template('simon.html')
 
     
 if __name__ == '__main__':

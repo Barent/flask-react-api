@@ -1,0 +1,35 @@
+.blueButton{
+   height:90px;
+    width:90px;
+    border-radius: 100% 0 0  0;
+    background:blue;
+}
+
+.redButton{
+    height:90px;
+    width:90px;
+    border-radius: 0 100% 0 0;
+    background:red;
+}
+
+.greenButton{
+    height:90px;
+    width:90px;
+    border-radius: 0 0 100% 0;
+    background:green;
+}
+
+.yellowButton{
+    height:90px;
+    width:90px;
+    border-radius: 0 0 0 100%;
+    background:yellow;
+}
+
+button:hover{
+    background-color: white;
+}
+
+body{
+    text-align: center;
+}
